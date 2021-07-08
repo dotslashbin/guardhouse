@@ -62,7 +62,7 @@ const useStyles = makeStyles((theme) => ({
 	},
 }))
 
-export default function Dashboard(): JSX.Element {
+export default function Main(): JSX.Element {
 	const classes = useStyles()
 	const [open, setOpen] = useState(true)
 
@@ -111,7 +111,7 @@ export default function Dashboard(): JSX.Element {
 						{/* Recent Deposits */}
 						<Grid item xs={12} md={4} lg={3}>
 							<Paper className={fixedHeightPaper}>
-								<VisitForm />
+								<VisitForm />ls
 							</Paper>
 						</Grid>
 						{/* Recent Orders */}
