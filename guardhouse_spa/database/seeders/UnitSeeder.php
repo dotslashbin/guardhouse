@@ -15,10 +15,10 @@ class UnitSeeder extends Seeder
 	 */
 	public function run()
 	{
-		for($i = 1; $i <= 10; $i++) {
-			$block = rand(1,5); 
-			$unit = rand(1, 5);
-			Unit::factory()->count(1)->create(['block_unit' => $block.'-'.$unit]);
+		for($block = 1; $block <= 10; $block++) {
+			for($unit = 1; $unit <= 10; $unit++) {
+				Unit::factory()->count(1)->create(['block_unit' => $block.'-'.$unit]);
+			}
 		}
 	}
 }
