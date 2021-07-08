@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Visitor extends Model
 {
-    use HasFactory;
+	use HasFactory;
+
+	public function visits() {
+		return $this->hasMany(Visit::class, 'visitor_id', 'id');
+	}
 }
