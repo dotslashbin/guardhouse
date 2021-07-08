@@ -5,6 +5,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 
 import Copyright from '../sections/Copyright'
 import Navbar from '../sections/Navbar'
+import Visits from '../sections/Visits'
 
 const drawerWidth = 240
 
@@ -56,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
 		flexDirection: 'column',
 	},
 	fixedHeight: {
-		height: 240,
+		height: 500,
 	},
 }))
 
@@ -73,6 +74,7 @@ export default function Dashboard(): JSX.Element {
 
 
 	const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight)
+
 	return (
 		<div className={classes.root}>
 			<CssBaseline />
@@ -102,7 +104,7 @@ export default function Dashboard(): JSX.Element {
 						{/* Chart */}
 						<Grid item xs={12} md={8} lg={9}>
 							<Paper className={fixedHeightPaper}>
-								test1
+								<Visits />
 							</Paper>
 						</Grid>
 						{/* Recent Deposits */}
