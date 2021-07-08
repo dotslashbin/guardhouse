@@ -6,6 +6,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
 import Copyright from '../sections/Copyright'
 import Navbar from '../sections/Navbar'
 import Visits from '../sections/Visits'
+import VisitForm from '../sections/VisitForm'
 
 const drawerWidth = 240
 
@@ -110,7 +111,7 @@ export default function Dashboard(): JSX.Element {
 						{/* Recent Deposits */}
 						<Grid item xs={12} md={4} lg={3}>
 							<Paper className={fixedHeightPaper}>
-								do something here...
+								<VisitForm />
 							</Paper>
 						</Grid>
 						{/* Recent Orders */}
