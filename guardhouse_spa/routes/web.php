@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\Units\UnitListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,8 +14,6 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-use Inertia\Inertia;
 
-Route::get('/', function () {
-    return Inertia::render('Main');
-});
+Route::get('/', [HomeController::class, '__invoke']);
+Route::get('/units', [UnitListController::class, '__invoke']);
