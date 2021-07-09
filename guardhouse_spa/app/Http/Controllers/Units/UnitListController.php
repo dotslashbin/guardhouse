@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Units;
 
 use App\Http\Controllers\Controller;
-use App\Services\CRUDServices\UnitsLister;
+use App\Services\Units\UnitsReader as reader;
 use Illuminate\Http\Request;
 
 class UnitListController extends Controller
@@ -16,7 +16,7 @@ class UnitListController extends Controller
 	 */
 	public function __invoke(Request $request)
 	{
-		$lister = new UnitsLister();
-		exit($lister->Execute());
+		$lister = new reader();
+		echo $lister->Execute();
 	}
 }
