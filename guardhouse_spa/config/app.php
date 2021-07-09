@@ -13,7 +13,10 @@ return [
     |
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => env('APP_NAME', 'Guardhouse'),
+
+    'default_page' => 1,
+    'default_page_limit' => 10,
 
     /*
     |--------------------------------------------------------------------------
