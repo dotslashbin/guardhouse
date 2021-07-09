@@ -17,6 +17,6 @@ class UnitListController extends Controller
 	public function __invoke(Request $request)
 	{
 		$lister = new reader();
-		echo $lister->Execute();
+		$this->Run('units', $lister);
 	}
 }
