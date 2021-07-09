@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Http\Controllers\Units;
+
+use App\Http\Controllers\Controller;
+use App\Services\CRUDServices\UnitsLister;
+use Illuminate\Http\Request;
+
+class UnitListController extends Controller
+{
+	/**
+	 * Handle the incoming request.
+	 *
+	 * @param  \Illuminate\Http\Request  $request
+	 * @return \Illuminate\Http\Response
+	 */
+	public function __invoke(Request $request)
+	{
+		$lister = new UnitsLister();
+		exit($lister->Execute());
+	}
+}
