@@ -20,6 +20,6 @@ class UnitListController extends Controller
 	public function __invoke(Request $request)
 	{
 		$lister = new reader();
-		return $this->Run('Main', $lister);
+		return $this->Run('Main', $lister, 'units');
 	}
 }

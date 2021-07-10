@@ -14,8 +14,8 @@ class Controller extends BaseController
 {
 	use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 
-	public function Run(String $reactComponent, CRUDinterface $service) {
+	public function Run(String $reactComponent, CRUDinterface $service, String $payloadName) {
 		$data = $service->Execute();
-		return Inertia::Render($reactComponent, [ 'foo' => 'test', 'data' => $data ]);
+		return Inertia::Render($reactComponent, [ 'foo' => 'test', $payloadName => $data ]);
 	}
 }
