@@ -1275,6 +1275,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-data-grid@^4.0.6":
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/@types/react-data-grid/-/react-data-grid-4.0.6.tgz#2edc0a97acee4a924d78a296636104d68295a80c"
+  integrity sha512-76ASJSNXeII2Ua4AhYTSAkkNGVAYdVpdnmvRl7WxzpwOTTid0F4V6HEnoU1ce6SIP3bL3L8Y5518isFmoJHFrQ==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-dom@^17.0.8":
   version "17.0.8"
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-17.0.8.tgz#3180de6d79bf53762001ad854e3ce49f36dd71fc"

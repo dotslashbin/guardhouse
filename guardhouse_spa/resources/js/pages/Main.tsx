@@ -7,6 +7,7 @@ import Copyright from '../sections/Copyright'
 import Navbar from '../sections/Navbar'
 import Visits from '../sections/Visits'
 import VisitForm from '../sections/VisitForm'
+import UnitList from '../sections/UnitList'
 
 const drawerWidth = 240
 
@@ -63,6 +64,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 export default function Main(): JSX.Element {
+
 	const classes = useStyles()
 	const [open, setOpen] = useState(true)
 
@@ -72,7 +74,6 @@ export default function Main(): JSX.Element {
 	const handleDrawerClose = () => {
 		setOpen(false)
 	}
-
 
 	const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight)
 
@@ -117,7 +118,7 @@ export default function Main(): JSX.Element {
 						{/* Recent Orders */}
 						<Grid item xs={12}>
 							<Paper className={classes.paper}>
-								bottom
+								<UnitList />
 							</Paper>
 						</Grid>
 					</Grid>

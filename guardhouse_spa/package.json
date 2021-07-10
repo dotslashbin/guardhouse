@@ -13,6 +13,7 @@
     },
     "devDependencies": {
         "@babel/preset-react": "^7.13.13",
+        "@types/react-data-grid": "^4.0.6",
         "@types/react-dom": "^17.0.8",
         "@typescript-eslint/eslint-plugin": "^4.28.2",
         "@typescript-eslint/parser": "^4.28.2",
