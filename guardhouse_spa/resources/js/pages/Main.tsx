@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { CssBaseline,Drawer,Box, List, ListItem,Divider,IconButton, Container,Grid,Paper, makeStyles } from '@material-ui/core'
 import clsx from 'clsx'
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft'
@@ -67,7 +67,6 @@ export default function Main(): JSX.Element {
 
 	const classes = useStyles()
 	const [open, setOpen] = useState(true)
-	const [units, setUnits] = useState('xxx')
 
 	const handleDrawerOpen = () => {
 		setOpen(true)
